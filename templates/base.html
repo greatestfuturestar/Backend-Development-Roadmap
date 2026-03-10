@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backend Developer Roadmap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>Backend Roadmap</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/python">Python</a></li>
+        <li><a href="/databases">Databases</a></li>
+        <li><a href="/backend">Backend Frameworks</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+{% block content %}
+
+{% endblock %}
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
